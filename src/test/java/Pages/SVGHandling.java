@@ -118,7 +118,7 @@ public class SVGHandling {
 		System.out.println(tooltip);
 	}
 	
-	System.out.println("dvdv");
+	System.out.println("Vicky");
 	}
 	
 }
