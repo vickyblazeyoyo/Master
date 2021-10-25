@@ -1,0 +1,45 @@
+
+int[] a = {2,1,4,5,3,9,7};
+
+int temp;
+
+for(int i = 1;i<=a.length;i++){
+max value=a[0];
+min value=a[0]
+if (max value <a[i]){
+
+temp=max value;
+maxvalue=a[i];
+a[i]=temp;
+
+
+sysout("Max Value "+max value)
+
+9677020137 sai
+
+}
+
+
+String a= "madam";
+
+map<charater,integer> map= new hashmap<>();
+Char[] c=a.tocharArray();
+for(character char :c){
+if(map.get(char)==1)
+map.put(map.get(char)+1)
+else{
+map.put(char,1)
+
+}
+
+}
+8056081738---sai Muruga matrimony 
+
+
+List<WebElement> list=driver.findElements(By.xpath("//tdata//tr//td"));
+for(WebElement element:list){
+if(element.getText().equals("Vignesh"))
+
+
+
+//div[@data-component-type='sp-sponsored-result']//span[@class='a-size-medium a-color-base a-text-normal'][contains(text(),'Samsung Galaxy M32 5G (Slate Black, 6GB RAM, 128GB')]/../../../..//span[@class='a-price-whole'][normalize-space()='16,999']

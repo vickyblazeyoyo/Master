@@ -3,9 +3,11 @@ package Utilities;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
@@ -898,7 +900,22 @@ public class Utilities {
 		}
 	}
 	
+	public static  void readTextFile(String path) {
+		 String st = null;
+	try {
+			File txtFile= new File(path);
+			BufferedReader reader=new BufferedReader(new FileReader(txtFile));
+			while ((st = reader.readLine()) != null) {
+	            System.out.println(st);
+	    }
+			
+		} catch (IOException e) {
+			LoggerUtility.LogException(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
+					+ new Throwable().getStackTrace()[0].getMethodName(), "Reading Text Exception: "+e);
+		
+		}
 	
+	}
 	
 	
 	

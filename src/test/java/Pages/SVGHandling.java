@@ -58,6 +58,7 @@ public class SVGHandling {
 			Utilities.sendKeys(GoogleSearch, "covid cases in india");
 			SubmitBtn.sendKeys(Keys.ENTER);
 			//ComplexSvgHandling();
+			Utilities.readTextFile(System.getProperty("user.dir")+"\\TextFile\\TextInput.txt");
 			Utilities.printAllTheValuesFromListWebelement(SuggessionList);
 			Utilities.TakeParticularElementScreenShot(GoogleImage,"Google1");
 			Utilities.TakeParticularElementScreenShot(GoogleImage,"Google2");
