@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import Pages.Browser;
 import Pages.Constant;
 import Utilities.LoggerUtility;
+import Utilities.TestrailUtility;
 import Utilities.Utilities;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -41,6 +42,9 @@ public class Hooks  {
 			scenario.attach(src, "image/png", "Screenshot"+Utilities.getTimeStamp("MM-dd-yy-HH-mm-ss"));
 			String rawFeatureName = scenario.getId().split(";")[0].replace("-"," ");
 			Constant.Failiue_Scenarios_Features.put("FeatureName---> "+rawFeatureName,"ScenarioName--->"+ scenario.getName());
+			TestrailUtility.updateTheResultTestrail("5");
+		}else {
+			TestrailUtility.updateTheResultTestrail("1");
 		}
 		new Browser(Constant.driver).BrowserQuit();
 		LoggerUtility.LoggerScenario(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."

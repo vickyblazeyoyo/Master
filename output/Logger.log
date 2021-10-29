@@ -1,1 +1,1 @@
-2021-10-26 02:21:26 INFO  teardown:44 - ********************************************Suite Execution Ended*************************************
+2021-10-29 19:31:15 INFO  explicitWait:16 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (1f39bd188ac85ece230fa09a7c82a4fc)] -> xpath: //input[@title='Search']]

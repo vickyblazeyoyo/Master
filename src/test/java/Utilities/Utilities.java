@@ -246,7 +246,8 @@ public class Utilities {
 					+ new Throwable().getStackTrace()[0].getMethodName(), "File Not Found : TestData_"+ReadFromPropertyFile("Environment") + ".xlsx"+" With ***Exception***"+e);
 		}
 		String[] splitedScenarioname = Constant.Scenario.split("-");
-		Sheet sheet = workbook.getSheet(splitedScenarioname[0].trim());
+		Constant.SplitedFeature=splitedScenarioname[0].trim();
+		Sheet sheet = workbook.getSheet(Constant.SplitedFeature);
 		if (sheet == null) {
 			 LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 						+ new Throwable().getStackTrace()[0].getMethodName(), "Test Data is not Applicable for this Scenario: " + Constant.Scenario);
