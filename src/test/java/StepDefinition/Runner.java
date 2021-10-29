@@ -7,6 +7,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
+import com.gurock.testrail.APIException;
+
 import Pages.Browser;
 import Pages.SetuptearDown;
 import io.cucumber.junit.Cucumber;
@@ -25,7 +27,7 @@ import io.cucumber.junit.CucumberOptions;
 
 public class Runner  {
 @BeforeClass
-public static void Setup() throws FileNotFoundException, IOException {
+public static void Setup() throws FileNotFoundException, IOException, APIException {
 	SetuptearDown.setup();
 
 }
