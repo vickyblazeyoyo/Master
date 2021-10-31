@@ -273,12 +273,7 @@
     <artifactId>ashot</artifactId>
     <version>1.5.4</version>
 </dependency>
-	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-testng</artifactId>
-    <version>6.11.0</version>
-</dependency>
+
 	<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber6-jvm -->
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
 <dependency>
@@ -310,7 +305,18 @@
     <artifactId>maven-resources-plugin</artifactId>
     <version>2.6</version>
 </dependency>
-
+<!-- https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine -->
+<dependency>
+    <groupId>org.junit.vintage</groupId>
+    <artifactId>junit-vintage-engine</artifactId>
+    <version>5.8.1</version>
+    <scope>test</scope>
+</dependency>
+ <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.3.2</version>
+    </dependency>
 		  
 		
 		
