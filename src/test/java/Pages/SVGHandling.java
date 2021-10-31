@@ -17,7 +17,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.Utilities;
-import io.reactivex.rxjava3.functions.Action;
+
 import net.sourceforge.tess4j.TesseractException;
 
 public class SVGHandling {
