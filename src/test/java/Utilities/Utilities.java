@@ -71,7 +71,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.asserts.SoftAssert;
+
 
 import com.asprise.ocr.Ocr;
 import com.deque.axe.AXE;
@@ -108,7 +108,7 @@ public class Utilities {
 	// For SVG Xpath use: //*[name()='svg']//*[local-name()='subtag']
 	// following-sibling::
 	// If there is ToolTip handling Go to source from inspect page click Ftn+F8 to pause the execution of the Webpage and then inspect particular tooltip and get the Xpath
-	static SoftAssert sa = new SoftAssert();
+	
 
 	public static String ReadFromPropertyFile(String Key) {
 
@@ -836,11 +836,11 @@ public class Utilities {
 	if (maxlength.equals("Fieldmaxlength")) {
 		LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 				+ new Throwable().getStackTrace()[0].getMethodName(), FieldName+" "+maxlength+" is the Maxlength of the Field and its verified");
-		sa.assertTrue(true);
+		
 	}else {
 		LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 				+ new Throwable().getStackTrace()[0].getMethodName(), FieldName+" "+maxlength+" is the Maxlength of the Field and its Not Equal");
-		sa.assertTrue(false);
+	
 	}
 	}
 	
