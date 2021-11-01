@@ -4,7 +4,11 @@
   <artifactId>Com.Test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
  <properties>
+ <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    
   </properties>
   <build>
    <resources>
@@ -319,6 +323,13 @@
 		<artifactId>extentreports</artifactId>
 		<version>5.0.6</version>
 	</dependency>
+	<dependency>
+   <groupId>tech.grasshopper</groupId>
+   <artifactId>extentreports-cucumber5-adapter</artifactId>
+   <version>2.8.4</version>
+   <scope>test</scope>
+</dependency>
+	
 		  
 		
 		
