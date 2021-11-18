@@ -1,6 +1,0 @@
-
-@Test
-Scenario: Testing Scenario [90m# src/test/resources/Features/Testing.feature:4[0m
-  [32mGiven [0m[32mUser is ready[0m      [90m# StepDefinition.TestingScenarios.user_is_ready()[0m
-  [32mWhen [0m[32mUser is testing[0m     [90m# StepDefinition.TestingScenarios.user_is_testing()[0m
-  [32mThen [0m[32mUser is printing[0m    [90m# StepDefinition.TestingScenarios.user_is_printing()[0m

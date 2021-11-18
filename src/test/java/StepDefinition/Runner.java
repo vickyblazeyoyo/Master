@@ -20,6 +20,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue= {"StepDefinition","Hooks"},
 		tags="@SVGHandling or @SVGWebtableHandling",
 		monochrome = true,
+		publish = true,
 		plugin = {"pretty","rerun:target/rerun.txt","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				}
 	
