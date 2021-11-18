@@ -46,8 +46,12 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                     <includes>
-                        <include>StepDefinition.Runner.java</include>
+                        <include>**/*Runner.java</include>
                     </includes>
+                     <systemPropertyVariables>
+				        <extent.reporter.spark.start>true</extent.reporter.spark.start>
+				        <extent.reporter.spark.out>target/test-output/SparkReport/Spark.html</extent.reporter.spark.out>
+				    </systemPropertyVariables>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
