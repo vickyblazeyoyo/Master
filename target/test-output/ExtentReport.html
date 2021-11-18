@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 1, 2021 01:50:02 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 18, 2021 10:40:02 AM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 1, 2021 01:50:02 PM</h3>
+<h3>Nov 18, 2021 10:40:02 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 1, 2021 01:51:27 PM</h3>
+<h3>Nov 18, 2021 10:41:09 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='71%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='50%'><b>4</b> steps passed</small></div>
 <div>
-<small data-tooltip='14%'><b>1</b> steps failed,
+<small data-tooltip='37%'><b>3</b> steps failed,
 <b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Frame Feature":83.368
+"Frame Feature":65.856
 };
 </script>
 <div class="row">
@@ -178,11 +178,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@SVG</td>
-<td>1</td>
-<td>1</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@SVGHandling</td>
@@ -194,11 +194,11 @@ var timeline = {
 </tr>
 <tr>
 <td>@SVGWebtableHandling</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -232,14 +232,14 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 1,
+passChild: 0,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
-failGrandChild: 1,
+passGrandChild: 4,
+failGrandChild: 3,
 warningGrandChild: 0,
 skipGrandChild: 1,
 infoGrandChild: 0,
@@ -276,7 +276,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Frame Feature</p>
             <p class="text-sm">
-              <span>1:50:03 PM</span> / <span>00:01:23:368</span>
+              <span>10:40:03 AM</span> / <span>00:01:05:856</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -285,9 +285,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Frame Feature</h5>
-<span class='badge badge-success'>11.01.2021 1:50:03 PM</span>
-<span class='badge badge-danger'>11.01.2021 1:51:27 PM</span>
-<span class='badge badge-default'>00:01:23:368</span>
+<span class='badge badge-success'>11.18.2021 10:40:03 AM</span>
+<span class='badge badge-danger'>11.18.2021 10:41:09 AM</span>
+<span class='badge badge-default'>00:01:05:856</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -330,15 +330,23 @@ eventsCount: 5,
       <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
+              <div class="step fail-bg" title="AFTER">
                 <span>Hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Screenshot11-01-21-13-50-54
+      <div>Screenshot11-18-21-10-40-46
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../embedded1.png' src="../embedded1.png">
     
     </div></div>
 </div>
       <div>
+        <textarea disabled class="code-block">com.gurock.testrail.APIException: TestRail API returned HTTP 503("Your TestRail Cloud account is disabled. Please contact your TestRail administrator to learn more.")
+	at com.gurock.testrail.APIClient.sendRequest(APIClient.java:296)
+	at com.gurock.testrail.APIClient.sendGet(APIClient.java:106)
+	at Utilities.TestrailUtility.getSuitId(TestrailUtility.java:56)
+	at Utilities.TestrailUtility.updateTheResultTestrail(TestrailUtility.java:34)
+	at Hooks.Hooks.tearDown(Hooks.java:45)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -347,10 +355,10 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Svg - Functionality Testing for Webpage</div>
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Svg - Functionality Testing for Webpage</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="StepDefinition.SVGTestingScenarios.user_login_to_emicalculator_site_for_webtable_handling()">
                 <span>Given User Login to Emicalculator Site for Webtable Handling</span>
@@ -365,6 +373,19 @@ eventsCount: 5,
               <div class="step pass-bg" title="StepDefinition.SVGTestingScenarios.user_read_month_based_data()">
                 <span>Then User read month based data</span>
       <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>Hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">com.gurock.testrail.APIException: TestRail API returned HTTP 503("Your TestRail Cloud account is disabled. Please contact your TestRail administrator to learn more.")
+	at com.gurock.testrail.APIClient.sendRequest(APIClient.java:296)
+	at com.gurock.testrail.APIClient.sendGet(APIClient.java:106)
+	at Utilities.TestrailUtility.getSuitId(TestrailUtility.java:56)
+	at Utilities.TestrailUtility.updateTheResultTestrail(TestrailUtility.java:34)
+	at Hooks.Hooks.tearDown(Hooks.java:47)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -393,8 +414,7 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-danger'>2</span>
 </span>
 <p class="name">@SVG</p>
 <p class="duration text-sm">2 tests</p>
@@ -402,8 +422,7 @@ eventsCount: 5,
 <div class="test-contents d-none">
 <div class="info">
 <h4>@SVG</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -416,7 +435,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:50:03 PM</td>
+<td>10:40:03 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Svg - Functionality Testing</a>
 <div class="">
@@ -424,9 +443,9 @@ eventsCount: 5,
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:51:00 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:40:48 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='8'>Svg - Functionality Testing for Webpage</a>
 <div class="">
@@ -462,7 +481,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:50:03 PM</td>
+<td>10:40:03 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Svg - Functionality Testing</a>
 <div class="">
@@ -477,7 +496,7 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@SVGWebtableHandling</p>
 <p class="duration text-sm">1 tests</p>
@@ -485,7 +504,7 @@ eventsCount: 5,
 <div class="test-contents d-none">
 <div class="info">
 <h4>@SVGWebtableHandling</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -496,9 +515,9 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:51:00 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:40:48 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='8'>Svg - Functionality Testing for Webpage</a>
 <div class="">
@@ -522,7 +541,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -550,11 +569,57 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:50:17 PM</td>
+<td>10:40:15 AM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='5'>When User SwitchTo Bar graph and read the Text</a>
 <div class="">
 <span class="badge badge-default">Frame Feature.Svg - Functionality Testing.When User SwitchTo Bar graph and read the Text</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">com.gurock.testrail.APIException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>com.gurock.testrail.APIException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:40:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Hooks.Hooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Frame Feature.Svg - Functionality Testing.Hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>10:41:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Hooks.Hooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Frame Feature.Svg - Functionality Testing for Webpage.Hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
