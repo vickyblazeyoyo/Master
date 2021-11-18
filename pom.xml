@@ -11,9 +11,17 @@
     
   </properties>
   <build>
+  <testResources>
+  <testResource>
+    <directory>${project.basedir}/src/test/java</directory>
+  </testResource>
+  <testResource>
+    <directory>${project.basedir}/src/test/resources</directory>
+  </testResource>
+</testResources>
    <resources>
      <resource>
-       <directory>src/test/resources</directory>
+       <directory>src/test/resources/Feature</directory>
      </resource>
    </resources>
     <pluginManagement>
