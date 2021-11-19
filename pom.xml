@@ -21,7 +21,7 @@
 </testResources>
    <resources>
      <resource>
-       <directory>src/test/resources/Feature</directory>
+       <directory>${project.basedir}/src/test/resources</directory>
      </resource>
    </resources>
     <pluginManagement>
@@ -41,7 +41,6 @@
         <executions>
           <execution>
             <goals>
-              <goal>Parallel-test</goal>
               <goal>integration-test</goal>
 				<goal>verify</goal>
             </goals>
