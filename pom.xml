@@ -1,8 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>Com.Test</groupId>
-  <artifactId>Com.Test</artifactId>
+  <artifactId>Com.Test1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <name>Com.Test1</name>
+  <url>http://maven.apache.org</url>
  <properties>
  <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -52,6 +55,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
                 <configuration>
+                <testClassesDirectory>${project.basedir}/src/test/java</testClassesDirectory>
+            <testSourceDirectory>${project.basedir}/src/main/java</testSourceDirectory>
                     <includes>
                         <include>**/*Runner.java</include>
                     </includes>
@@ -103,11 +108,6 @@
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-jvm-deps</artifactId>
 			<version>1.0.5</version>
-		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>gherkin</artifactId>
-			<version>2.12.2</version>
 		</dependency>
 		<dependency>
     <groupId>junit</groupId>
@@ -296,7 +296,17 @@
 		<groupId>info.cukes</groupId>
 		<artifactId>cucumber-picocontainer</artifactId>
 		<version>1.2.4</version>
-	</dependency>
+		<exclusions>
+			<exclusion>
+				<groupId>info.cukes</groupId>
+				<artifactId>cucumber-core</artifactId>
+			</exclusion>
+			<exclusion>
+				<groupId>info.cukes</groupId>
+				<artifactId>gherkin</artifactId>
+			</exclusion>
+		</exclusions>
+</dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
 <dependency>
     <groupId>org.apache.maven.plugins</groupId>
