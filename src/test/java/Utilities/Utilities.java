@@ -821,7 +821,7 @@ public class Utilities {
 			LoggerUtility.LogException(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 					+ new Throwable().getStackTrace()[0].getMethodName(), "DownloadImage Exception" + e);
 		}
-		//changes
+		//changes are made
 	}
 
 	public static void certificateCapabilities() {
