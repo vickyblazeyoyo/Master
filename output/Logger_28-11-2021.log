@@ -345,3 +345,8 @@
 2021-11-28 11:50:50 INFO  getText:24 - Element [[ChromeDriver: chrome on WINDOWS (ea20504cc188c8cc2f408a2d36ecd612)] -> xpath: //tr[@class='row no-margin yearlypaymentdetails']/..//tr[@id='monthyear2026']//tr//td] Text : ₹ 43,18,777
 2021-11-28 11:50:50 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (ea20504cc188c8cc2f408a2d36ecd612)] -> xpath: //tr[@class='row no-margin yearlypaymentdetails']/..//tr[@id='monthyear2026']//tr//td]
 2021-11-28 11:50:50 INFO  getText:24 - Element [[ChromeDriver: chrome on WINDOWS (ea20504cc188c8cc2f408a2d36ecd612)] -> xpath: //tr[@class='row no-margin yearlypaymentdetails']/..//tr[@id='monthyear2026']//tr//td] Text : 13.62%
+2021-11-28 12:50:14 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-11-28 12:50:15 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-11-28 12:50:16 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing for Webpage*************************************
+2021-11-28 12:50:20 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-11-28 12:50:20 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************

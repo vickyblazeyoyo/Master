@@ -16,12 +16,12 @@
   <build>
  <resources>
       <resource>
-        <directory>src\test\resources</directory>
+        <directory>src\test\resources\Features</directory>
       </resource>
     </resources>
     <testResources>
       <testResource>
-        <directory>src\test\resources</directory>
+        <directory>src\test\resources\Features</directory>
       </testResource>
     </testResources>
     <pluginManagement>
