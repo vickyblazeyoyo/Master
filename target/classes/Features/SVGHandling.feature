@@ -1,5 +1,5 @@
 @SVG
-Feature: Frame Feature
+Feature: SVG Feature
 @SVGHandling
 Scenario: Svg - Functionality Testing
 Given User Login to Emicalculator  Site 
