@@ -31,7 +31,10 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
           <configuration>
-             
+             	<source>1.8</source>
+          			<target>1.8</target>
+          			<fork>true</fork>
+					<executable>${java.home}/../bin/javac</executable>
           </configuration>
         </plugin>
         <plugin>
@@ -45,7 +48,7 @@
          <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.0.0-M4</version>
         <executions>
           <execution>
             <goals>
@@ -58,10 +61,10 @@
               <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M4</version>
+                <version>3.0.0-M5</version>
                 <configuration>
                 <includes>
-                        <include>StepDefinition.Runner.java</include>
+                        <include>**/*Runner.java</include>
                     </includes>
                   
                 </configuration>
@@ -354,26 +357,17 @@
     
 </dependency>
   
-<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>5.0.1</version>
-    <exclusions>
-    	<exclusion>
-    		<groupId>org.testng</groupId>
-    		<artifactId>testng</artifactId>
-    	</exclusion>
-    </exclusions>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-junit47 -->
 
 <dependency>
     <groupId>xml-apis</groupId>
     <artifactId>xml-apis</artifactId>
     <version>1.4.01</version>
 </dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-junit47 -->
+
+
   
 		
 		

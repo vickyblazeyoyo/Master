@@ -1,13 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: StepDefinition.Runner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 98.123 s <<< FAILURE! - in StepDefinition.Runner
-SVG Feature.Svg - Functionality Testing  Time elapsed: 71.494 s  <<< FAILURE!
-org.opentest4j.MultipleFailuresError: 
-Multiple Failures (2 failures)
-	javax.imageio.IIOException: Can't read input file!
-	com.gurock.testrail.APIException: TestRail API returned HTTP 503("Your TestRail Cloud account is disabled. Please contact your TestRail administrator to learn more.")
-
-SVG Feature.Svg - Functionality Testing for Webpage  Time elapsed: 21.024 s  <<< ERROR!
-com.gurock.testrail.APIException: TestRail API returned HTTP 503("Your TestRail Cloud account is disabled. Please contact your TestRail administrator to learn more.")
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in StepDefinition.Runner
+StepDefinition.Runner  Time elapsed: 0.005 s  <<< ERROR!
+io.cucumber.core.exception.CucumberException: java.lang.NoClassDefFoundError: Could not initialize class com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.aventstack.extentreports.service.ExtentService$ExtentReportsLoader
 

@@ -1,0 +1,137 @@
+2021-11-30 23:51:34 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-11-30 23:51:36 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-11-30 23:51:37 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-11-30 23:51:37 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-11-30 23:51:50 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (05ed7102c58b7be254cac24a50e177aa)] -> xpath: //input[@id='startmonthyear']]
+2021-11-30 23:51:53 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (05ed7102c58b7be254cac24a50e177aa)] -> xpath: //input[@title='Search']]
+2021-11-30 23:52:19 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-11-30 23:52:25 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-11-30 23:52:26 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-11-30 23:52:31 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-11-30 23:52:31 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-11-30 23:52:31 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-11-30 23:55:41 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-11-30 23:55:42 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-11-30 23:55:43 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-11-30 23:55:43 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-11-30 23:55:58 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (3cd305e1c17447c563455916cb34ea82)] -> xpath: //input[@id='startmonthyear']]
+2021-11-30 23:56:00 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (3cd305e1c17447c563455916cb34ea82)] -> xpath: //input[@title='Search']]
+2021-11-30 23:56:21 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-11-30 23:56:27 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-11-30 23:56:28 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-11-30 23:56:34 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-11-30 23:56:34 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-11-30 23:56:34 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:06:38 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:06:39 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:06:41 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:06:41 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:06:59 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (9cc7883353bdfea04ccca2d0f37518c8)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:07:01 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (9cc7883353bdfea04ccca2d0f37518c8)] -> xpath: //input[@title='Search']]
+2021-12-01 00:07:28 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:07:35 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:07:35 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:07:41 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:07:41 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:07:41 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:10:40 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:10:41 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:10:42 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:10:42 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:10:57 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (668e457126dc1ed22f7bf0852ca76812)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:10:59 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (668e457126dc1ed22f7bf0852ca76812)] -> xpath: //input[@title='Search']]
+2021-12-01 00:11:28 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:11:29 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:11:31 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:11:31 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:11:44 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (42421c2573348c2bfb81927488b02a3a)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:11:47 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (42421c2573348c2bfb81927488b02a3a)] -> xpath: //input[@title='Search']]
+2021-12-01 00:12:14 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:12:22 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:12:23 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:12:25 INFO  tearDown:61 - ********************************************Scenario Execution Ended :Svg - Functionality Testing*************************************
+2021-12-01 00:12:29 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:12:29 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:12:29 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:17:25 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:17:27 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:17:27 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:17:27 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:17:45 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (f56586a97d2b53727a2405767621adde)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:17:47 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (f56586a97d2b53727a2405767621adde)] -> xpath: //input[@title='Search']]
+2021-12-01 00:18:12 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:18:18 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:18:19 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:18:22 INFO  tearDown:61 - ********************************************Scenario Execution Ended :Svg - Functionality Testing*************************************
+2021-12-01 00:18:26 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:18:26 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:18:26 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:19:00 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:19:02 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:19:03 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:19:03 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:19:20 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (bfcde536389a7a012e65bb9726e02237)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:19:23 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (bfcde536389a7a012e65bb9726e02237)] -> xpath: //input[@title='Search']]
+2021-12-01 00:19:50 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:19:56 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:19:57 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:21:51 INFO  tearDown:61 - ********************************************Scenario Execution Ended :Svg - Functionality Testing*************************************
+2021-12-01 00:24:57 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:24:58 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:24:58 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:28:46 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:28:47 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:28:49 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:28:49 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:29:02 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (83cba06fc686516d252ce9f26dd83897)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:29:04 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (83cba06fc686516d252ce9f26dd83897)] -> xpath: //input[@title='Search']]
+2021-12-01 00:29:29 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:29:36 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:29:36 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:29:38 INFO  tearDown:61 - ********************************************Scenario Execution Ended :Svg - Functionality Testing*************************************
+2021-12-01 00:29:42 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:29:42 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:29:42 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:30:22 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:30:24 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:30:25 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:30:25 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:30:41 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (a42f1d865db2d55e17338d95f7d53a9f)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:30:42 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (a42f1d865db2d55e17338d95f7d53a9f)] -> xpath: //input[@title='Search']]
+2021-12-01 00:30:58 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:31:04 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:31:05 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:31:06 INFO  tearDown:61 - ********************************************Scenario Execution Ended :Svg - Functionality Testing*************************************
+2021-12-01 00:31:10 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:31:10 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:31:10 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:37:21 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:37:22 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:37:23 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:37:23 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:37:41 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (debf24b821c73111e7ccbe149bfa6a3f)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:37:44 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (debf24b821c73111e7ccbe149bfa6a3f)] -> xpath: //input[@title='Search']]
+2021-12-01 00:38:05 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:38:12 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:38:12 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:38:16 INFO  tearDown:61 - ********************************************Scenario Execution Ended :Svg - Functionality Testing*************************************
+2021-12-01 00:38:20 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:38:20 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:38:20 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:39:59 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:40:00 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:40:01 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:40:01 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-12-01 00:40:15 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (87450470dc2a1f4d1095029cc1bd1e95)] -> xpath: //input[@id='startmonthyear']]
+2021-12-01 00:40:18 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (87450470dc2a1f4d1095029cc1bd1e95)] -> xpath: //input[@title='Search']]
+2021-12-01 00:40:42 INFO  printAllTheValuesFromListWebelement:24 - List of WebElements Size :0
+2021-12-01 00:40:48 INFO  TakeParticularElementScreenShot:24 - Google1 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google1.png
+2021-12-01 00:40:49 INFO  TakeParticularElementScreenShot:24 - Google2 ScrenShot Taken and Saved in the Path: C:\AutomationWorkspace\Com.Test1\ParticularElementScreenshot\Google2.png
+2021-12-01 00:40:52 INFO  tearDown:61 - ********************************************Scenario Execution Ended :Svg - Functionality Testing*************************************
+2021-12-01 00:40:56 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
+2021-12-01 00:40:56 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
+2021-12-01 00:40:56 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-01 00:43:33 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-12-01 00:43:35 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-12-01 00:43:36 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-12-01 00:43:36 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
