@@ -348,3 +348,16 @@
 2021-11-30 17:57:42 INFO  teardown:52 - ********************************************Falied Scenarios :*************************************
 2021-11-30 17:57:42 INFO  teardown:52 - ********************************************FeatureName---> file:///C:/AutomationWorkspace/Com.Test1/src/test/resources/Features/SVGHandling.feature:4 ScenarioName--->Svg - Functionality Testing*************************************
 2021-11-30 17:57:42 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-11-30 18:46:44 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-11-30 18:46:45 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-11-30 18:46:46 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-11-30 18:46:46 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-11-30 18:46:54 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing for Webpage*************************************
+2021-11-30 18:46:54 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-11-30 18:46:54 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-11-30 18:49:56 INFO  setup:52 - ********************************************Suite Execution Started*************************************
+2021-11-30 18:49:57 INFO  setup:61 - ********************************************Scenario Execution Started :Svg - Functionality Testing*************************************
+2021-11-30 18:49:59 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx File Found and Accessed
+2021-11-30 18:50:00 INFO  ReadDataFromExcelPutItInMap:24 - TestData_System.xlsx Workbook Closed Successfully
+2021-11-30 18:50:16 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (a368e4f082d929cb6fbd99d86cb62d01)] -> xpath: //input[@id='startmonthyear']]
+2021-11-30 18:50:21 INFO  explicitWait:24 - Element is  Visible : [[ChromeDriver: chrome on WINDOWS (a368e4f082d929cb6fbd99d86cb62d01)] -> xpath: //input[@title='Search']]
