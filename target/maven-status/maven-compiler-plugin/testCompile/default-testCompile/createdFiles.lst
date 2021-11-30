@@ -14,6 +14,7 @@ StepDefinition\ActionTestingScenarios.class
 Pages\OTPTesting.class
 StepDefinition\SVGTestingScenarios.class
 StepDefinition\ModelPopupsScenario.class
+StepDefinition\Runner.class
 StepDefinition\WebtableScenarios.class
 StepDefinition\OTPScenarios.class
 Pages\DateTesting.class
@@ -34,5 +35,4 @@ Pages\SVGHandling.class
 Pages\SetuptearDown.class
 Pages\WindowPopupTesting.class
 StepDefinition\BosstrapDropdown.class
-StepDefinition\TestRunner.class
 Pages\ActionsTesting.class

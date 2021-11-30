@@ -26,7 +26,7 @@ import io.cucumber.junit.CucumberOptions;
 	
 	)
 
-public class TestRunner  {
+public class Runner  {
 @BeforeClass
 public static void Setup() throws FileNotFoundException, IOException, APIException {
 	SetuptearDown.setup();
