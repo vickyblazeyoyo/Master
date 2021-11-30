@@ -61,9 +61,11 @@
                 <version>3.0.0-M4</version>
                 <configuration>
                 <includes>
-                        <include>StepDefinition.TestRunner.java</include>
+                        <include>StepDefinition.Runner.java</include>
                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
+                     
+    
                 </configuration>
             </plugin>
         
@@ -365,6 +367,12 @@
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.0.1</version>
+    <exclusions>
+    	<exclusion>
+    		<groupId>org.testng</groupId>
+    		<artifactId>testng</artifactId>
+    	</exclusion>
+    </exclusions>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-junit47 -->
@@ -378,7 +386,7 @@
     <artifactId>xml-apis</artifactId>
     <version>1.4.01</version>
 </dependency>
-		  
+  
 		
 		
 		
