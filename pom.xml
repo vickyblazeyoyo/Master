@@ -339,14 +339,8 @@
     <groupId>org.junit.vintage</groupId>
     <artifactId>junit-vintage-engine</artifactId>
     <version>5.8.1</version>
-    <scope>test</scope>
 </dependency>
- <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.3.2</version>
-          <scope>test</scope>
-    </dependency>
+
   <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber6-adapter -->
 <dependency>
     <groupId>tech.grasshopper</groupId>
@@ -376,11 +370,7 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-junit47 -->
-<dependency>
-    <groupId>org.apache.maven.surefire</groupId>
-    <artifactId>surefire-junit47</artifactId>
-    <version>3.0.0-M5</version>
-</dependency>
+
 <dependency>
     <groupId>xml-apis</groupId>
     <artifactId>xml-apis</artifactId>
