@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: StepDefinition.Runner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 81.253 s <<< FAILURE! - in StepDefinition.Runner
-SVG Feature.Svg - Functionality Testing  Time elapsed: 53.006 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 98.123 s <<< FAILURE! - in StepDefinition.Runner
+SVG Feature.Svg - Functionality Testing  Time elapsed: 71.494 s  <<< FAILURE!
 org.opentest4j.MultipleFailuresError: 
 Multiple Failures (2 failures)
 	javax.imageio.IIOException: Can't read input file!
 	com.gurock.testrail.APIException: TestRail API returned HTTP 503("Your TestRail Cloud account is disabled. Please contact your TestRail administrator to learn more.")
 
-SVG Feature.Svg - Functionality Testing for Webpage  Time elapsed: 24.483 s  <<< ERROR!
+SVG Feature.Svg - Functionality Testing for Webpage  Time elapsed: 21.024 s  <<< ERROR!
 com.gurock.testrail.APIException: TestRail API returned HTTP 503("Your TestRail Cloud account is disabled. Please contact your TestRail administrator to learn more.")
 
