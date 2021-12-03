@@ -21,12 +21,14 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
@@ -39,6 +41,7 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.poi.ss.usermodel.Cell;
@@ -131,10 +134,12 @@ public class Utilities {
 		if (windowsessionIDs.size()==0) {
 			LoggerUtility.LogException(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 					+ new Throwable().getStackTrace()[0].getMethodName(), "Window session id not Found");
-} 
-		List<String> listofsessionId = new ArrayList<String>(windowsessionIDs);
-		driver.switchTo().window(listofsessionId.get(windowno - 1));
-	}
+} else {
+	List<String> listofsessionId = new ArrayList<String>(windowsessionIDs);
+	driver.switchTo().window(listofsessionId.get(windowno - 1));
+
+}
+			}
 
 	public static void Click(WebElement element) {
 		try {
@@ -339,6 +344,21 @@ public class Utilities {
 					+ new Throwable().getStackTrace()[0].getMethodName(), "Drag and Drop Source and Destination Webelement is not Found, ***Source Element: "+source+"Destination Element: "+destination);
 		}
 	}
+	
+	public static String getCurrentURL(WebDriver driver) {
+		return driver.getCurrentUrl();
+	}
+
+	public static String getTitle(WebDriver driver) {
+		return driver.getTitle();
+	}
+	
+	public static void actionClear(WebDriver driver, WebElement webElement) {
+		webElement.click();
+		Actions action = new Actions(driver);
+		webElement.sendKeys(Keys.chord(Keys.CONTROL, "a"), "55");
+		action.sendKeys(Keys.DELETE);
+	}
 
 	public static void printAllTheValuesFromListWebelement(List<WebElement> elements) {
 		LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
@@ -352,6 +372,7 @@ public class Utilities {
 		}
 	}
 
+	//Arguments- element:we have specify list of webelements, attribute:The attribute value which we want to get
 	public static void getIframes(List<WebElement> element, String attribute) {
 		LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 				+ new Throwable().getStackTrace()[0].getMethodName(), "List of IFrames Size :"+element.size());
@@ -399,7 +420,8 @@ public class Utilities {
           
 	}
 
-	// Using Ashot Api
+	// Using Ashot Api Arguments-element:Specify the webelement which we want to take screenshot,
+	//ElementName:We have to specify Screenshot Name
 	public static void TakeParticularElementScreenShot(WebElement element, String ElementName) throws Throwable  {
 		Screenshot shot = new AShot().coordsProvider(new WebDriverCoordsProvider())
 				.shootingStrategy(ShootingStrategies.viewportPasting(100)).takeScreenshot(Constant.driver, element);
@@ -415,8 +437,8 @@ public class Utilities {
 		}
 	}
 
-	// Using Ashot Api
-	public static void verifyTwoImagesDifference(String imageName, String ExpectedImagePath, String ActualImagePath)
+	// Using Ashot Api-We can verify two screenshots
+	public static void verifyTwoImagesDifference(String ExpectedImagePath, String ActualImagePath)
 			throws IOException {
 		// Read Buffered Image using -->[]
 		BufferedImage Expected = ImageIO.read(new File(ExpectedImagePath));
@@ -510,7 +532,33 @@ public class Utilities {
 		js.executeScript("window.open()");
 
 	}
+	
+	// Scroll down to particular element location
+		public static void scrollToElement(WebDriver driver, WebElement element) {
+			try {
+				int x = element.getLocation().getX();
+				int y = element.getLocation().getY();
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("window.scrollBy(" + (x - 200) + "," + (y - 200) + ")");
+			} catch (Exception e) {
+				LoggerUtility.LogException(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
+						+ new Throwable().getStackTrace()[0].getMethodName(), "Scrolling to element is not working");
+	
+			}
+		}
 
+		// Scroll to top of the page
+		public static void scrollTop(WebDriver driver) {
+			try {
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("window.scrollTo(0, 0)");
+				
+			} catch (Exception e) {
+				LoggerUtility.LogException(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
+						+ new Throwable().getStackTrace()[0].getMethodName(), "Scrolling top is not working");
+			}
+		}
+		
 	public static void selectAllOptionsBootsrapDropdown(List<WebElement> elements) {
 		LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 				+ new Throwable().getStackTrace()[0].getMethodName(), "List of Options in the dropdown"+elements.size());
@@ -580,12 +628,31 @@ public class Utilities {
 		Select s = new Select(element);
 		if (!element.isSelected()) {
 			s.selectByVisibleText(DropdownValue);
-		} else {
 			LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
+					+ new Throwable().getStackTrace()[0].getMethodName(), 
+					DropdownValue+" dropDown Successfully selected");
+		} else {
+			LoggerUtility.LogException(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 					+ new Throwable().getStackTrace()[0].getMethodName(), DropdownValue + " Value is Already selected");
 			
 		}
 	}
+	
+	
+	public static void deSelectByVisibletext(WebElement element, String DropdownValue) {
+		try {
+			Select selectBox = new Select(element);
+			selectBox.deselectByVisibleText(DropdownValue);
+			LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
+					+ new Throwable().getStackTrace()[0].getMethodName(), 
+					DropdownValue+" dropDown successfully Deselected");
+		
+		} catch (Exception e) {
+			LoggerUtility.LogException(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
+					+ new Throwable().getStackTrace()[0].getMethodName(), DropdownValue+" dropDown not  Deselected");
+		}
+	}
+
 
 	public static void getOptionsDropdown(WebElement element) {
 		Select s = new Select(element);
@@ -671,6 +738,10 @@ public class Utilities {
 	public static void incognitoBrowser(ChromeOptions option) {
 		option.addArguments("incognito");
 	}
+	
+	public static void disableWindowPopups(ChromeOptions option) {
+		option.setExperimentalOption("excludesSwitches", Arrays.asList("disable-popup-blocking"));
+	}
 
 	// Twilio API
 	public static String getOtpNbr() {
@@ -748,13 +819,24 @@ public class Utilities {
 
 	}
 
-	public static String getElementColour(WebElement element) {
+	public static String getElementBackgroundColour(WebElement element) {
 		explicitWait(10, element);
-		String colour = element.getCssValue("background-color");
+		String Backgroundcolour = element.getCssValue("background-color");
 		LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
-				+ new Throwable().getStackTrace()[0].getMethodName(), "Element colour: " + colour);
+				+ new Throwable().getStackTrace()[0].getMethodName(), "Element Background colour: " + Backgroundcolour);
 	
+		return Backgroundcolour;
+
+	}
+	
+	public static String  getElementColour(WebElement element) {
+		explicitWait(10, element);
+		String colour = element.getCssValue("color");
+		LoggerUtility.LogMessage(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
+				+ new Throwable().getStackTrace()[0].getMethodName(), "Element Colour: " + colour);
+		
 		return colour;
+		
 
 	}
 
@@ -767,8 +849,18 @@ public class Utilities {
 		return font;
 
 	}
+	
+	public static String randomNumber(int digit) {
+		String generatednumber = RandomStringUtils.randomNumeric(digit);
+		return generatednumber;
+	}
+	
+	public static void waitForLoading(WebDriver driver, WebDriverWait wait) {
+		WebElement loading = driver.findElement(By.xpath("//div[@class=\"ngx-loading-text center-center\"]"));
+		wait.until(ExpectedConditions.invisibilityOf(loading));
+	}
 
-	// Using Commons-Csv jar for Reading CSV files
+	// Using Commons-Csv jar for Reading CSV files 
 	public static void readCSVFile(String Header)  {
 		try {
 			Reader reader = Files.newBufferedReader(Paths
@@ -791,6 +883,7 @@ public class Utilities {
 	// Use tess4j Api and paste the eng.traineddata file download from git
 	// It will not support .JPG format images,Set Environmental variable for tessaract eng file
 	// To read the image first takescreenshot and then read the text
+	//Filename: This specify the Screenshot name 
 	public static String readImageToText(String Filename)  {
 		String ImageText=null;
 		try {

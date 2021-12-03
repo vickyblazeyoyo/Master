@@ -64,9 +64,9 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                 <includes>
-                        <include>**/*Runner.java</include>
+                        <include>StepDefinition.Runner.java</include>
                     </includes>
-                  
+                  <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
             </plugin>
         
