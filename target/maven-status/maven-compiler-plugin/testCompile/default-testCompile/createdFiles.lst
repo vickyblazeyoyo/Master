@@ -1,5 +1,6 @@
 com\gurock\testrail\APIClient.class
 com\gurock\testrail\APIException.class
+ApiUtilities\ExcelHelper.class
 ScreenRec\MyScreenRecorder.class
 Utilities\LoggerUtility.class
 Pages\HighlightingWebelementscenarios.class

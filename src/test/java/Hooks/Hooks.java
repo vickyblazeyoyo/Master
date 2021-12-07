@@ -7,6 +7,8 @@ import java.lang.invoke.MethodHandles;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import ApiUtilities.ExcelHelper;
+import ApiUtilities.beforeApiScenarios;
 import Pages.Browser;
 import Pages.Constant;
 import Utilities.LoggerUtility;
@@ -26,9 +28,14 @@ public class Hooks  {
 
 		LoggerUtility.LoggerScenario(MethodHandles.lookup().lookupClass().toString().split(" ")[1]+"."
 						+ new Throwable().getStackTrace()[0].getMethodName(), "Scenario Execution Started :"+Constant.Scenario);
-		Utilities.ReadDataFromExcelPutItInMap();
-		System.out.println("Hooks class");
-		 new Browser(Constant.driver).BrowserLaunch();
+		
+		if (Utilities.ReadFromPropertyFile("Execution").equalsIgnoreCase("API")) {
+			beforeApiScenarios.beforeScenarioConfig();
+		}else {
+			Utilities.ReadDataFromExcelPutItInMap();
+			 new Browser(Constant.driver).BrowserLaunch();
+		}
+		
 	}
 	
 	@After

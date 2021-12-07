@@ -3,7 +3,7 @@
     <configuration>
     <theme>dark</theme>
         <encoding>UTF-8</encoding>
-        <protocol>https</protocol>
+        <protocol>http</protocol>
         <documentTitle>TestingDemo - Test Automation Report</documentTitle>
         <reportName>Automation Test Report</reportName>
          <testViewChartLocation>bottom</testViewChartLocation>

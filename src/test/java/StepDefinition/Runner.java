@@ -11,6 +11,7 @@ import com.gurock.testrail.APIException;
 
 import Pages.Browser;
 import Pages.SetuptearDown;
+import Utilities.Utilities;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -18,9 +19,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src/test/resources/Features",
 		glue= {"StepDefinition","Hooks"},
-		tags="@SVGHandling",
+		tags="@SVGWebtableHandling",
 		monochrome = true,
-		publish = true,
 		plugin = {"pretty","rerun:target/rerun.txt","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				}
 	
