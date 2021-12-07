@@ -17,6 +17,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.security.SecureRandom;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -30,12 +31,18 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Random;
 import java.util.Set;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESKeySpec;
 import javax.imageio.ImageIO;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -112,7 +119,13 @@ public class Utilities {
 	// following-sibling::
 	// If there is ToolTip handling Go to source from inspect page click Ftn+F8 to pause the execution of the Webpage and then inspect particular tooltip and get the Xpath
 	
-
+	private static Cipher encryptCipher = null;
+	private static Cipher decryptCipher = null;
+	static String pass = "abcd1234";
+	
+	
+	
+	
 	public static String ReadFromPropertyFile(String Key) {
 
 		Properties prop = new Properties();
@@ -1010,6 +1023,125 @@ public class Utilities {
 		}
 	
 	}
+	//Getting date along with the days count-Autobots(Today()+1)
+	public static String getCurrentCSTDateWithArgFormat(String format, int days) {
+		Calendar cal = Calendar.getInstance();
+		SimpleDateFormat date = new SimpleDateFormat(format);
+		date.setTimeZone(TimeZone.getTimeZone("CST"));
+		Date dateobj = new Date();
+		cal.setTime(dateobj);
+		cal.add(Calendar.DATE, days); // minus number would decrement the days
+		return(date.format(cal.getTime()));
+	}
+	
+	//Getting curent month or year or current day 
+	public static String getCSTSpecificComponentInDate(String component) {
+		SimpleDateFormat cstCdtFormat=new SimpleDateFormat(component);
+		cstCdtFormat.setTimeZone(TimeZone.getTimeZone("CST6CDT"));
+		return(Integer.toString(Integer.parseInt(cstCdtFormat.format(new Date()))));
+	}
+	
+	//Getting Timestamp Using Current Timezon-CST
+	public static String getTellerTimeStamp() throws Throwable {
+		Calendar cal = Calendar.getInstance();
+		SimpleDateFormat date = new SimpleDateFormat("YYYY-MM-DD HH:mm:ss:SSSS");
+		date.setTimeZone(TimeZone.getTimeZone("CST"));
+		Date dateobj = new Date();
+		cal.setTime(dateobj);
+		return date.format(cal.getTime());
+	}
+	
+	//Generating 5 random numbers
+	public static String fiveDigitRandomNum() throws Throwable {
+		SecureRandom random = new SecureRandom();
+		int num = random.nextInt(100000);
+		String randomNum = String.format("%05d", num); 
+		return randomNum;
+	}
+	//Generating 3 random numbers
+	public static String threeDigitRandomNum() throws Throwable {
+		SecureRandom random = new SecureRandom();
+		int num = random.nextInt(100);
+		String randomNum = String.format("%03d", num); 
+		return randomNum;
+	}
+	//Getting 9 random numbers
+	public static String get9Digit() throws Throwable {
+		DateFormat date = new SimpleDateFormat("yyMMddmmss");
+		Date dateobj = new Date();
+		String stringDay = date.format(dateobj);
+		stringDay = stringDay.substring(0, stringDay.length()-1);
+		return stringDay;
+	}
+	//Generating SSN number
+	public static String genSSN() {
+        long timeSeed = System.nanoTime(); // to get the current date time value
+        double randSeed = Math.random() * 1000; // random number generation
+        long midSeed = (long) (timeSeed * randSeed); // mixing up the time and
+        String s = midSeed + "";
+        String subStr = s.substring(0, 9);
+        int finalSeed = Integer.parseInt(subStr);    // integer value
+        System.out.println(finalSeed); 
+        return String.valueOf(finalSeed);
+	}
+	//Get 10 digit random number
+	public static String get10Digit() throws Throwable {
+		DateFormat date = new SimpleDateFormat("yyMMddmmss");
+		Date dateobj = new Date();
+		return date.format(dateobj);
+	}
+	
+	//This method is used to encrypt a string with base 64 encryption
+	public static String encryptBase64(String unencryptedString) throws Exception {
+		// Encode the string into bytes using utf-8
+		byte[] unencryptedByteArray = unencryptedString.getBytes("UTF8");
+
+		// Encrypt
+		byte[] encryptedBytes = encryptCipher.doFinal(unencryptedByteArray);
+
+		// Encode bytes to base64 to get a string
+		byte[] encodedBytes = Base64.encodeBase64(encryptedBytes);
+
+		return new String(encodedBytes);
+	}
+	
+	// This method is used to decrypt an encrypted string with base 64 encryption
+	public static String decryptBase64(String encryptedString) throws Exception {
+		// Encode bytes to base64 to get a string
+		byte[] decodedBytes = Base64.decodeBase64(encryptedString.getBytes());
+
+		// Decrypt
+		byte[] unencryptedByteArray = decryptCipher.doFinal(decodedBytes);
+
+		// Decode using utf-8
+		return new String(unencryptedByteArray, "UTF8");
+	}
+	
+	//Decrypt the String
+	public static String dstr(String evalue) throws Throwable {
+		DESKeySpec key = new DESKeySpec(pass.getBytes());
+		SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
+
+		SecretKey ekey = keyFactory.generateSecret(key);
+		decryptCipher = Cipher.getInstance("DES");
+		decryptCipher.init(Cipher.DECRYPT_MODE, ekey);
+        String dString = decryptBase64(evalue);
+		return dString.toString().trim();
+	}
+	
+	//Encrypt the String
+	public static String encstr(String value) throws Throwable {
+		DESKeySpec key = new DESKeySpec(pass.getBytes());
+		SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
+        SecretKey ekey = keyFactory.generateSecret(key);
+		encryptCipher = Cipher.getInstance("DES");
+		encryptCipher.init(Cipher.ENCRYPT_MODE, ekey);
+        String unencryptedString = value;
+		String encryptedString = encryptBase64(unencryptedString);
+		return encryptedString.toString().trim();
+	}
+	
+	
 	
 	
 	

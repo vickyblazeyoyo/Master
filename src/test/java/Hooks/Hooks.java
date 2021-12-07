@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 import ApiUtilities.ExcelHelper;
+import ApiUtilities.beforeApiScenarios;
 import Pages.Browser;
 import Pages.Constant;
 import Utilities.LoggerUtility;
@@ -29,7 +30,7 @@ public class Hooks  {
 						+ new Throwable().getStackTrace()[0].getMethodName(), "Scenario Execution Started :"+Constant.Scenario);
 		
 		if (Utilities.ReadFromPropertyFile("Execution").equalsIgnoreCase("API")) {
-			Constant.Api_Testdata=ExcelHelper.getData();
+			beforeApiScenarios.beforeScenarioConfig();
 		}else {
 			Utilities.ReadDataFromExcelPutItInMap();
 			 new Browser(Constant.driver).BrowserLaunch();
