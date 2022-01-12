@@ -22,7 +22,7 @@ import io.cucumber.java.Scenario;
 public class Hooks  {
 	Scenario scenario;
 	@Before
-	public  void setup(Scenario scenario) throws FileNotFoundException, IOException {
+	public  void setup(Scenario scenario) throws Throwable {
 		this.scenario=scenario;
 		Constant.Scenario=scenario.getName().toString();
 

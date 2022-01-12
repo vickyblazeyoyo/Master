@@ -1,1 +1,1 @@
-2021-12-07 13:40:47 INFO  teardown:52 - ********************************************Suite Execution Ended*************************************
+2021-12-19 02:15:01 INFO  Click:37 - Click Intercept with Webelement :[[ChromeDriver: chrome on WINDOWS (4ddd2af11af83e5b80f84e9de7bd8dcb)] -> xpath: //input[@id='btnLogin']] with ***exception*** java.lang.NullPointerException

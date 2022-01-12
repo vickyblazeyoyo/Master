@@ -19,6 +19,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.SecureRandom;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -72,6 +73,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
@@ -740,16 +742,18 @@ public class Utilities {
 		HashMap<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values", images);
 		options.setExperimentalOption("prefs", prefs);
+		
 	}
 
 	public static void headlessChromeoption(ChromeOptions option) {
 		option.addArguments("window-size=1400,800");
 		option.addArguments("headless");
-
+		
 	}
 
 	public static void incognitoBrowser(ChromeOptions option) {
 		option.addArguments("incognito");
+		
 	}
 	
 	public static void disableWindowPopups(ChromeOptions option) {
@@ -1141,7 +1145,19 @@ public class Utilities {
 		return encryptedString.toString().trim();
 	}
 	
-	
+	//Getting time difference between two times
+	public static String getTimeDiff(String fromTime, String toTime) throws ParseException  {
+		Long diff;
+		SimpleDateFormat dateFormat = new SimpleDateFormat("ss S");
+		Date firstParsedDate = dateFormat.parse(fromTime);
+		Date secondParsedDate = dateFormat.parse(toTime);
+		if (secondParsedDate.getTime() > firstParsedDate.getTime()) {
+			diff = secondParsedDate.getTime() - firstParsedDate.getTime();
+		} else {
+			diff = secondParsedDate.getTime() + 60000 - firstParsedDate.getTime();
+		}
+		return Long.toString(diff);
+	}
 	
 	
 	

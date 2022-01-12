@@ -19,7 +19,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="src/test/resources/Features",
 		glue= {"StepDefinition","Hooks"},
-		tags="@SVGWebtableHandling",
+		tags="@SVGHandling",
 		monochrome = true,
 		plugin = {"pretty","rerun:target/rerun.txt","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 				}
@@ -27,6 +27,8 @@ import io.cucumber.junit.CucumberOptions;
 	)
 
 public class Runner  {
+	
+	
 @BeforeClass
 public static void Setup() throws FileNotFoundException, IOException, APIException {
 	SetuptearDown.setup();

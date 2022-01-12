@@ -1,15 +1,23 @@
 package Pages;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.springframework.util.LinkedCaseInsensitiveMap;
 
+import ApiUtilities.Response;
+
 public class Constant {
 	//Scenario constants:
 public static Scenario scenario;
 public static String Scenario=null,SplitedFeature;
+
+//Common Constants
+public static String Envirionment;
+
+
 
 //Testrail Constants:
 public static String TestRailUrl,TestRail_AUTHKEY,TestSuit_ID,TestRun_ID,TestCase_ID;
@@ -30,6 +38,11 @@ public static LinkedHashMap<String, String[]> multipleDataSetup=new LinkedHashMa
 
 //API Execution Constants:
 public static Map<String,String> Api_Testdata=new LinkedCaseInsensitiveMap<String>();
-public static String apiNames;
+public static String apiName,respCode,apiMethodName,SetUpTearDownAPIName,setUpTearDownAPIURI,stAPIMethodName,nameAPIURI,fromTime,toTime,CURL,responseBody,execTime,fromTimeBeforeScenario;
+public static Map<String,String> requestHeader=new HashMap<String, String>();
+public static Response res=null,setUpTearDownresp;
+public static String setUpReq="setUpRequired", testDownReq="tearDownRequired";
+public static Integer totalCount=0;
+
 }
    
