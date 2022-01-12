@@ -34,6 +34,9 @@ public class Browser extends Utilities {
 	}else if (Utilities.ReadFromPropertyFile("Chromeoptions").equalsIgnoreCase("disableImage")) {
 		 Utilities.disableImagesOnSite(options);
 		 driver = new ChromeDriver(options);
+	}else if (Utilities.ReadFromPropertyFile("Chromeoptions").equalsIgnoreCase("disablePopup")) {
+		Utilities.disableWindowPopups(options);
+		 driver = new ChromeDriver(options);
 	}
 	else 
        {
